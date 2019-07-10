@@ -84,7 +84,7 @@ class Post extends Component {
               <br></br>
             </div>
           </div>
-          <form>
+
           <div className="jobposting">
             <div className="container">
 
@@ -95,7 +95,7 @@ class Post extends Component {
                       <h5>Job Title</h5>
                       <input
                         type='text'
-                        className='job-title'
+                        className='job-title col-lg-12'
                         value={this.state.name}
                         onChange={this.onChangeName} />
                     </label>
@@ -105,7 +105,7 @@ class Post extends Component {
                 <label>
                   <h5>Job Description</h5>
                   <textarea
-                    className='job-description'
+                    className='job-description col-lg-12'
                     value={this.state.description}
                     onChange={this.onChangeDescription} />
                 </label>
@@ -116,7 +116,6 @@ class Post extends Component {
             </div>
           </div>
           <br></br>
-          </form>
         </div>
         <Footer />
       </div>
