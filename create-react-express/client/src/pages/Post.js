@@ -84,6 +84,7 @@ class Post extends Component {
               <br></br>
             </div>
           </div>
+          <form>
           <div className="jobposting">
             <div className="container">
 
@@ -115,6 +116,7 @@ class Post extends Component {
             </div>
           </div>
           <br></br>
+          </form>
         </div>
         <Footer />
       </div>
