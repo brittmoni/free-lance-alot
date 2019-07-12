@@ -46,13 +46,14 @@ class Jobs extends Component {
                   <p>
                     {job.description}
                   </p>
+                  <button className="btn btn-primary">Apply Now</button>
               </ListItem>
             ))}
           </List>
         ) : (
           <h1>No Jobs Posted yet</h1>
         )}</p>
-    <a href="#" class="btn btn-primary">Apply Now</a>
+    {/* <a href="#" class="btn btn-primary">Apply Now</a> */}
   </div>
 </div>
 
