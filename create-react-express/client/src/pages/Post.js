@@ -110,7 +110,7 @@ class Post extends Component {
                     onChange={this.onChangeDescription} />
                 </label>
                 <br></br>
-                <input type='submit' variant="primary" value='Submit' />
+                <input type='submit' variant="primary" value='Submit' onClick={this.onSubmit} />
                 <br></br>
               </div>
             </div>
