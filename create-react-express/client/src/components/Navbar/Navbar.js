@@ -26,9 +26,9 @@ function Navbar(props) {
                             <a class="nav-link" href="/jobs">Find Jobs
                             </a>
                         </li>
-                        <li class="nav-item active">
+                        {/* <li class="nav-item active">
                             <a class="nav-link" href="/">Log In</a>
-                        </li>
+                        </li> */}
 
                         <li class="nav-item active">
                             <a className="nav-link" href="/postjob">
@@ -43,13 +43,23 @@ function Navbar(props) {
                             <a class="nav-link" href="/Tutorials">Tutorials
                             </a>
                         </li>
-                        <li class="nav-item inactive">
+                        {/* <li class="nav-item inactive">
                             <Button><a href="/"onClick={() => firebase.auth().signOut()} id="signOut" data-toggle="modal" data-target="#exampleModal" text="Sign Out">Sign Out</a> 
                             </Button>
-                        </li>
+                        </li> */}
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <form class="form-inline my-2 my-lg-0">
                         <div id="welcomeText"><h2>{"Welcome, " + sessionStorage.getItem("freelancerName")}  <img src={sessionStorage.getItem("freelancerPic")} width="50px" height="50px" /></h2></div>
+                        <ul>
+                            <li class="nav-item inactive">
+                                <Button><a href="/"onClick={() => firebase.auth().signOut()} id="signOut" data-toggle="modal" data-target="#exampleModal" text="Sign Out">Sign Out</a> 
+                                </Button>
+                            </li>
+                        </ul>
                     </form>
                 </div>
             </div>
